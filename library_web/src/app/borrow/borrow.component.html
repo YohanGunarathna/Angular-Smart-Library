@@ -1,0 +1,32 @@
+<body>
+<app-nav-bar></app-nav-bar>
+<br><br>
+<div class="container">
+  <h2>BORROW ITEM</h2>
+<br><br>
+<form>
+  <div style="position: relative; margin-top: -2em;margin-left: 6em">
+     
+      <p>
+          <label> ISBN Number</label>
+      </p>
+      <p>
+          <label> Reader ID</label>
+      </p>
+  </div>
+
+  <div style="position: absolute; margin-top: -6em;margin-left: 20em">
+      <p>
+          <input type="text" [(ngModel)]="borrowItem.isbn" name="input" required >
+      </p>
+      <p>
+          <input type="text" [(ngModel)]="borrowItem.rid" name="input" required >
+      </p>
+  </div>
+
+  <button (click)="bItem()" style="margin-left: 17em; margin-top: 2em" >Borrow </button>
+</form>
+
+
+</div>
+</body>

@@ -1,0 +1,49 @@
+<body>
+<app-nav-bar></app-nav-bar>
+<br><br>
+<div class="container">
+  <h2>Add New Book  :: {{bookCount.bookcount}}/100</h2>
+  <h5>Free Space :: {{100-bookCount.bookcount}} </h5>
+
+    <div class="form-group">
+      <label>ISBN:</label>
+      <input type="text" class="form-control" [(ngModel)]="bookData.isbn" placeholder="Enter ISBN">
+    </div>
+
+    <div class="form-group">
+        <label>TITLE:</label>
+        <input type="text" class="form-control" [(ngModel)]="bookData.title" placeholder="Enter Title">
+    </div>
+
+    <div class="form-group">
+        <label>SECTOR:</label>
+        <input type="text" class="form-control" [(ngModel)]="bookData.sector" placeholder="Enter Sector">
+    </div>
+
+    <div class="form-group">
+        <label>AUTHOR:</label>
+        <input type="text" class="form-control" [(ngModel)]="bookData.authors" placeholder="Enter author">
+    </div>
+
+    <div class="form-group">
+        <label>PUBLISHER:</label>
+        <input type="text" class="form-control" [(ngModel)]="bookData.publisher" placeholder="Enter publisher">
+    </div>
+
+    <div class="form-group">
+        <label>PAGES:</label>
+       <input type="number" class="form-control" [(ngModel)]="bookData.pages" placeholder="Enter pages">
+    </div>
+
+    <div class="form-group">
+        <label>PUBLICATION DATE:</label>
+        <input type="date" class="form-control" [(ngModel)]="bookData.pubyear" placeholder="Enter Publicatio Date">
+    </div>
+
+    
+  <button (click)="addBook()">Save Book</button>
+
+</div>
+<br>
+
+</body>

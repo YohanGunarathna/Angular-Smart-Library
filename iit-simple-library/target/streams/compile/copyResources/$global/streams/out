@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\cw\iit-simple-library\conf\application.conf,D:\cw\iit-simple-library\target\scala-2.12\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\cw\iit-simple-library\conf\evolutions,D:\cw\iit-simple-library\target\scala-2.12\classes\evolutions)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\cw\iit-simple-library\conf\evolutions\default,D:\cw\iit-simple-library\target\scala-2.12\classes\evolutions\default)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\cw\iit-simple-library\conf\evolutions\default\1.sql,D:\cw\iit-simple-library\target\scala-2.12\classes\evolutions\default\1.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\cw\iit-simple-library\conf\logback.xml,D:\cw\iit-simple-library\target\scala-2.12\classes\logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\cw\iit-simple-library\conf\routes,D:\cw\iit-simple-library\target\scala-2.12\classes\routes)[0m

@@ -1,0 +1,22 @@
+<app-nav-bar></app-nav-bar>
+<body >
+<div class="jumbotron">
+  <h1><b>Welcome to IIT Library Management System</b></h1>      
+  <p>This is fully automatrd Library system for IIT.</p>
+</div>
+
+<div class="container">
+  <button type="button" (click)="addBook()" class="btn btn-success">ADD BOOK</button>
+  <button type="button" (click)="addDVD()" class="btn btn-success active">ADD DVD</button>
+  <button type="button" (click)="displaybooks()"class="btn btn-primary active">DISPLAY BOOK</button>
+  <button type="button" (click)="displaydvds()"class="btn btn-primary active">DISPLAY DVD</button>
+  <button type="button" (click)="borrow()" class="btn btn-warning active">BORROW ITEM</button>
+  <button type="button" (click)="return()" class="btn btn-info active">RETURN ITEM</button>
+  <button type="button" class="btn btn-danger active">GENARATE REPORT </button>
+</div>
+<div class="footer">
+
+  <p><b>Prepared by : Yohan Gunarathna</b></p>
+
+</div>
+</body>

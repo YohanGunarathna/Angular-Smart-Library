@@ -1,0 +1,40 @@
+<body>
+<app-nav-bar></app-nav-bar>
+<br><br>
+<div class="container">
+  <h2>Display All Books</h2>
+
+<table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">ISBN</th>
+        <th scope="col">Title</th>
+        <th scope="col">Sector</th>
+        <th scope="col">Author</th>
+        <th scope="col">Publisher</th>
+        <th scope="col">Pages</th>
+        <th scope="col">Year</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let p of books; let i=index;">
+        <td scope="row" *ngIf ="p.readerId===null" bgcolor="#00e600" >{{i+1}}</td>
+        <td scope="row" *ngIf = "p.readerId!==null" bgcolor="#FF0000">{{i+1}}</td>
+        <td>{{p.isbn}}</td>
+        <td>{{p.title}}</td>
+        <td>{{p.sector}}</td>
+        <td>{{p.author}}</td>
+        <td>{{p.publisher}}</td>
+        <td>{{p.numberOfPages}}</td>
+        <td>{{p.pubYear}}</td>
+        <td><button class="delete" title="delete book"(click)="delete(p.isbn)">DELETE</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  </div>
+</body>
